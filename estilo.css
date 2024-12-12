@@ -1,0 +1,195 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    color: #000;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    background-color: aqua;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  h1 {
+    margin: 0;
+    color: #000;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+   
+  }
+  
+  .form-section {
+    flex: 1;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y el campo */
+    gap: 10px; /* Espaciado entre la etiqueta y el campo */
+  }
+  
+  label {
+    width: 100px; /* Define un ancho fijo para las etiquetas */
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="text"] {
+    flex: 1; /* El campo de entrada ocupa el espacio restante */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .preferences {
+    display: flex; /* Divide el contenedor en dos partes */
+    align-items: flex-start; /* Alinea verticalmente los elementos al inicio */
+    gap: 20px; /* Espaciado entre las dos columnas */
+  }
+  
+  .preferences-left {
+    flex: 0 0 auto; /* Mantiene el tamaño del contenido */
+    font-weight: bold;
+    margin-right: 40px;
+  }
+  
+  .preferences-right {
+    flex: 1; /* Ocupa el resto del espacio disponible */
+    
+    display: inline-block;
+    flex-direction: column; /* Alinea las opciones y el checkbox verticalmente */
+    gap: 10px; /* Espaciado entre las opciones */
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .gallery {
+    flex: 1;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 10px; /* Espaciado entre las imágenes */
+    margin-top: 20px;
+  }
+  
+  
+  .gallery-item img {
+    width: 100%;         /* Ocupa el 100% del contenedor */
+    max-width: 150px;    /* El tamaño máximo es de 150px de ancho */
+    height: auto;        /* Mantiene la proporción original de la imagen */
+    border-radius: 5px;  /* Bordes redondeados */
+  }
+  
+  .gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .gallery h2 {
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+  }
+  
+  
+  .gallery-item {
+    display: block;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item:hover {
+    background-color: #f0f8ff;
+  }
+
+  #imageModal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #modalImage {
+    max-width: 90%;
+    max-height: 80%;
+  }
+  
+  #imageModal button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #imageModal button:hover {
+    background-color: #f1f1f1;
+  }

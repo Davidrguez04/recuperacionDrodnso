@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación DWC</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>Ejercicio de Recuperación</h1>
+        </div>
+        <div class="content">
+          <div class="form-section">
+            <form>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Introduce tu email">
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" placeholder="Introduce tu nombre">
+                </div>
+                <div class="preferences">
+                    <div class="preferences-left">
+                      <p>Selecciona <br>preferencia:</p>
+                    </div>
+                    <div class="preferences-right">
+                      <label>
+                        <input type="radio" name="horario" checked> Horario de mañana
+                      </label><br>
+                      <label>
+                        <input type="radio" name="horario"> Horario de tarde
+                      </label><br>
+                      <label>
+                        <input type="radio" name="horario" disabled> Nocturno (no disponible)
+                      </label><br><br>
+                      <label>
+                        <input type="checkbox"> Enviar notificaciones
+                      </label>
+                    </div>
+                  </div>
+                
+                <button type="submit">Enviar</button>
+              </form>
+              
+            <table>
+              <thead>
+                <tr>
+                  <th>Email</th>
+                  <th>Nombre</th>
+                  <th>Opción</th>
+                  <th>Notificaciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Aquí se pueden agregar filas -->
+              </tbody>
+            </table>
+          </div>
+          <div class="gallery">
+            <h2>Galería</h2>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="imagenes/buque esc.jpg" alt="Buque Esc." onclick="showImage(this)" />
+                <p>Buque Esc.</p>
+              </div>
+              <div class="gallery-item">
+                <img src="imagenes/Fragata_F-101__Álvaro_de_Bazán__fondeada_en_la_Ría_de_Pontevedra_(14694192716).jpg" alt="F-100" onclick="showImage(this)" />
+                <p>F-100</p>
+              </div>
+              <div class="gallery-item">
+                <img src="imagenes/bam.jpg" alt="BAM" onclick="showImage(this)" />
+                <p>BAM</p>
+              </div>
+              <div class="gallery-item">
+                <img src="imagenes/harrier.jpg" alt="Harrier" onclick="showImage(this)" />
+                <p>Harrier</p>
+              </div>
+              <div class="gallery-item">
+                <img src="imagenes/s-81.jpg" alt="S-81" onclick="showImage(this)" />
+                <p>S-81</p>
+              </div>
+              <div class="gallery-item">
+                <img src="imagenes/l-61.jpg" alt="L61" onclick="showImage(this)" />
+                <p>L61</p>
+              </div>
+            </div>
+            <div id="imageModal" class="image-modal">
+              <img id="modalImage" src="" alt="" />
+              <button onclick="hideImage()">Volver</button>
+            </div>
+          </div>
+          
+      </div>
+     <script type="module" src="main.js"></script>
+</body>
+
+
+</html>
